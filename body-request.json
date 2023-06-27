@@ -1,0 +1,48 @@
+{
+    "filter": {
+        "offer": {
+            "slug": [
+                "sell"
+            ]
+        },
+        "property_type": {
+            "slug": [
+                "apartment"
+            ]
+        },
+        "locations": {
+            "cities": {
+                "slug": [
+                    "city-colombia-47-001",
+                    "colombia-magdalena-7200003-santa-marta"
+                ]
+            }
+        },
+        "price": {
+            "lte": 300000000
+        }
+    },
+    "fields": {
+        "exclude": [],
+        "facets": [],
+        "include": [
+            "fr_property_id",
+            "area",
+            "price",
+            "client.first_name" ,
+            "client.last_name" ,
+            "client.company_name" ,
+            "contact.emails.email" ,
+            "contact.phones.phone_number" ,
+            "dates.published" ,
+            "locations.communes.name" ,
+            "locations.neighbourhoods.name" ,
+            "property_type.name"
+        ],
+        "limit": 100,
+        "offset": 0,
+        "ordering": [],
+        "platform": 41,
+        "with_algorithm": false
+    }
+}
